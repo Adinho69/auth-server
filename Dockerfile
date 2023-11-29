@@ -13,7 +13,7 @@ FROM fedora AS bins
 RUN curl -fsSL https://github.com/caddyserver/caddy/releases/download/v2.7.4/caddy_2.7.4_linux_amd64.tar.gz | tar -zxvf - caddy
 RUN curl -fsSL https://github.com/nicolas-van/multirun/releases/download/1.1.3/multirun-x86_64-linux-gnu-1.1.3.tar.gz | tar -zxvf - multirun
 
-FROM quay.io/keycloak/keycloak:22.0.1
+FROM quay.io/keycloak/keycloak:17.0.1
 
 COPY java.config /etc/crypto-policies/back-ends/java.config
 
